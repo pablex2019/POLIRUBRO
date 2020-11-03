@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Polirubro
 {
-    class UsuarioModelo
+    public class UsuarioModelo
     {
+        public int Id { get; set; }
+        public string NombreUsuario { get; set; }
+        public string Clave { get; set; }
     }
 }
