@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace Polirubro
 {
-    public partial class frmIniciarSesion : Form
+    public partial class frmArticuloAgregar : Form
     {
-        private UsuarioControler usuario;
-
-        public frmIniciarSesion()
+        public frmArticuloAgregar()
         {
             InitializeComponent();
-            usuario = new UsuarioControler("Usuario");
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            usuario.ValidarExistencia(txtUsuario.Text, txtClave.Text);
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

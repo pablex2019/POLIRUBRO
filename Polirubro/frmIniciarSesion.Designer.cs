@@ -31,7 +31,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblClave = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtClave = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -60,12 +60,12 @@
             this.lblClave.TabIndex = 2;
             this.lblClave.Text = "Contraseña";
             // 
-            // textBox1
+            // txtClave
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtClave.Location = new System.Drawing.Point(15, 65);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(100, 20);
+            this.txtClave.TabIndex = 3;
             // 
             // btnEntrar
             // 
@@ -75,6 +75,7 @@
             this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // frmIniciarSesion
             // 
@@ -83,7 +84,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(132, 134);
             this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtClave);
             this.Controls.Add(this.lblClave);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
@@ -100,7 +101,7 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblClave;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Button btnEntrar;
     }
 }
