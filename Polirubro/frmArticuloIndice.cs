@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Polirubro
 {
-    public partial class frmIniciarSesion : Form
+    public partial class frmArticuloIndice : Form
     {
-        private UsuarioControler usuario;
+        private ArticuloControler articulo;
 
-        public frmIniciarSesion()
+        public frmArticuloIndice()
         {
             InitializeComponent();
-            usuario = new UsuarioControler("Usuario");
+            articulo = new ArticuloControler("Articulo");
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
+        private void frmArticuloIndice_Load(object sender, EventArgs e)
         {
-            usuario.ValidarExistencia(txtUsuario.Text, txtClave.Text);
+            dataGridView1.DataSource = articulo.ListadoInicial();
         }
     }
 }
