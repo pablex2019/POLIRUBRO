@@ -22,7 +22,7 @@ namespace Polirubro
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            usuario.ValidarExistencia(txtUsuario.Text, txtClave.Text);
+            usuario.ValidarExistencia(txtUsuario.Text, txtClave.Text,this);
         }
     }
 }

@@ -10,22 +10,35 @@ using System.Windows.Forms;
 
 namespace Polirubro
 {
-    public partial class frmArticuloAgregar : Form
+    public partial class frmArticuloEditar : Form
     {
         public DataGridView Grilla;
-        private ArticuloControler Articulo;
+        public string descripcion;
         private MetodosGenericos MetodosGenericos;
+        private ArticuloControler Articulo;
 
-        public frmArticuloAgregar()
+        public frmArticuloEditar()
         {
             InitializeComponent();
             Articulo = new ArticuloControler("Articulo");
             MetodosGenericos = new MetodosGenericos();
         }
+
+        private void frmArticuloEditar_Load(object sender, EventArgs e)
+        {
+            var _Articulo = Articulo.ObtenerArticulo(descripcion);
+            txtDescripcion.Text = _Articulo.Descripcion;
+            txtPrecioCosto.Text = _Articulo.Descripcion;
+            txtPrecioVenta.Text = _Articulo.Descripcion;
+            txtCantidad.Text = _Articulo.Descripcion;
+            txtGanancia.Text = _Articulo.Descripcion;
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Articulo.ABM(1,this,null, Grilla);
+            Articulo.ABM(2,null,this,descripcion, Grilla);
         }
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             MetodosGenericos.Cancelar(this);
