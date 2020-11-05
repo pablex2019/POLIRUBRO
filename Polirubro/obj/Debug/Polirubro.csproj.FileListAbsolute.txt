@@ -1,1 +1,14 @@
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Polirubro.exe.config
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.csprojResolveAssemblyReference.cache
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmIniciarSesion.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.Properties.Resources.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.csproj.GenerateResource.Cache
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Polirubro.exe
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Polirubro.pdb
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.exe
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.pdb
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmArticuloAgregar.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmArticuloIndice.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmPanel.resources
