@@ -25,7 +25,11 @@ namespace Polirubro
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Articulo.ABM(1,this,null, Grilla);
+=======
+            Articulo.ABM(1,this,null,0, Grilla);
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
             Articulo.ABM(1,this,null,0, Grilla);
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c

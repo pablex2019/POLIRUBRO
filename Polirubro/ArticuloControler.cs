@@ -39,15 +39,21 @@ namespace Polirubro
             return this.ListaArticulos.ToList();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         public ArticuloModelo ObtenerArticulo(string Descripcion)
         {
             Leer();
             return this.ListaArticulos.Where(x => x.Descripcion == Descripcion).FirstOrDefault();
 =======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         public ArticuloModelo ObtenerArticulo(int id)
         {
             Leer();
             return this.ListaArticulos.Where(x => x.Id == id).FirstOrDefault();
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         }
         public bool Existe(frmArticuloAgregar ArticuloAgregar)
@@ -58,6 +64,7 @@ namespace Polirubro
         {
             return ListaArticulos.Max(x => x.Id) + 1;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
         public void ABM(int Operacion,frmArticuloAgregar ArticuloAgregar,frmArticuloEditar ArticuloEditar,string descripcion,DataGridView Grilla)
         {
@@ -71,6 +78,8 @@ namespace Polirubro
                         {
                             ArticuloModelo Articulo = new ArticuloModelo();
 =======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         public void ABM(int Operacion,frmArticuloAgregar ArticuloAgregar,frmArticuloEditar ArticuloEditar,int Id,DataGridView Grilla)
         {
             Leer();
@@ -82,6 +91,9 @@ namespace Polirubro
                     {
                         if(Existe(ArticuloAgregar)!=true)
                         {
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                             Articulo.Id = ObtenerUltimoID();
                             Articulo.Descripcion = ArticuloAgregar.txtDescripcion.Text;
@@ -98,7 +110,10 @@ namespace Polirubro
                     else
                     {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         ArticuloModelo Articulo = new ArticuloModelo();
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                         Articulo.Id = 1;
@@ -116,6 +131,7 @@ namespace Polirubro
                     break;
                 case 2://Edicion
 <<<<<<< HEAD
+<<<<<<< HEAD
                         var Articulo = ObtenerArticulo(descripcion);
                         Articulo.Descripcion = ArticuloEditar.txtDescripcion.Text;
                         Articulo.PrecioCosto = Convert.ToDouble(ArticuloEditar.txtPrecioCosto.Text);
@@ -128,6 +144,8 @@ namespace Polirubro
                 case 3://Baja
 
 =======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                         var _Articulo = ObtenerArticulo(Id);
                         _Articulo.Descripcion = ArticuloEditar.txtDescripcion.Text;
                         _Articulo.PrecioCosto = Convert.ToDouble(ArticuloEditar.txtPrecioCosto.Text);
@@ -144,6 +162,9 @@ namespace Polirubro
                         Guardar();
                         MessageBox.Show("Articulo Eliminado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Grilla.DataSource = ListadoInicial();
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                     break;
             }

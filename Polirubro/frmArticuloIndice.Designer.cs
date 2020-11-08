@@ -33,8 +33,13 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+=======
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnDescargar = new System.Windows.Forms.Button();
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnDescargar = new System.Windows.Forms.Button();
@@ -81,6 +86,7 @@
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(177, 186);
@@ -99,6 +105,8 @@
             this.button4.Text = "Descargar";
             this.button4.UseVisualStyleBackColor = true;
 =======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(177, 186);
@@ -118,6 +126,9 @@
             this.btnDescargar.Text = "Descargar";
             this.btnDescargar.UseVisualStyleBackColor = true;
             this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             // 
             // frmArticuloIndice
@@ -126,8 +137,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 221);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
+=======
+            this.Controls.Add(this.btnDescargar);
+            this.Controls.Add(this.btnEliminar);
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
             this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.btnEliminar);
@@ -151,8 +167,13 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+=======
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnDescargar;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnDescargar;

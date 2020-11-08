@@ -14,7 +14,11 @@ namespace Polirubro
     {
         public DataGridView Grilla;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public string descripcion;
+=======
+        public int Id;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
         public int Id;
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
@@ -31,6 +35,7 @@ namespace Polirubro
         private void frmArticuloEditar_Load(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var _Articulo = Articulo.ObtenerArticulo(descripcion);
             txtDescripcion.Text = _Articulo.Descripcion;
             txtPrecioCosto.Text = _Articulo.Descripcion;
@@ -38,19 +43,28 @@ namespace Polirubro
             txtCantidad.Text = _Articulo.Descripcion;
             txtGanancia.Text = _Articulo.Descripcion;
 =======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             var _Articulo = Articulo.ObtenerArticulo(Id);
             txtDescripcion.Text = _Articulo.Descripcion;
             txtPrecioCosto.Text = _Articulo.PrecioCosto.ToString();
             txtPrecioVenta.Text = _Articulo.PrecioVenta.ToString();
             txtCantidad.Text = _Articulo.Cantidad.ToString();
             txtGanancia.Text = _Articulo.Ganancia.ToString();
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Articulo.ABM(2,null,this,descripcion, Grilla);
+=======
+            Articulo.ABM(2,null,this,Id, Grilla);
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
             Articulo.ABM(2,null,this,Id, Grilla);
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
