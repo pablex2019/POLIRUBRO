@@ -24,7 +24,11 @@ namespace Polirubro
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Articulo.ABM(1,this,null, Grilla);
+=======
+            Articulo.ABM(1,this,null,0, Grilla);
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {

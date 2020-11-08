@@ -38,10 +38,17 @@ namespace Polirubro
             Leer();
             return this.ListaArticulos.ToList();
         }
+<<<<<<< HEAD
         public ArticuloModelo ObtenerArticulo(string Descripcion)
         {
             Leer();
             return this.ListaArticulos.Where(x => x.Descripcion == Descripcion).FirstOrDefault();
+=======
+        public ArticuloModelo ObtenerArticulo(int id)
+        {
+            Leer();
+            return this.ListaArticulos.Where(x => x.Id == id).FirstOrDefault();
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         }
         public bool Existe(frmArticuloAgregar ArticuloAgregar)
         {
@@ -51,6 +58,7 @@ namespace Polirubro
         {
             return ListaArticulos.Max(x => x.Id) + 1;
         }
+<<<<<<< HEAD
         public void ABM(int Operacion,frmArticuloAgregar ArticuloAgregar,frmArticuloEditar ArticuloEditar,string descripcion,DataGridView Grilla)
         {
             Leer();
@@ -62,6 +70,19 @@ namespace Polirubro
                         if(Existe(ArticuloAgregar)!=true)
                         {
                             ArticuloModelo Articulo = new ArticuloModelo();
+=======
+        public void ABM(int Operacion,frmArticuloAgregar ArticuloAgregar,frmArticuloEditar ArticuloEditar,int Id,DataGridView Grilla)
+        {
+            Leer();
+            switch (Operacion)
+            {
+                case 1://Alta
+                    ArticuloModelo Articulo = new ArticuloModelo();
+                    if (ListaArticulos.Count>0)
+                    {
+                        if(Existe(ArticuloAgregar)!=true)
+                        {
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                             Articulo.Id = ObtenerUltimoID();
                             Articulo.Descripcion = ArticuloAgregar.txtDescripcion.Text;
                             Articulo.PrecioCosto = Convert.ToDouble(ArticuloAgregar.txtPrecioCosto.Text);
@@ -76,7 +97,10 @@ namespace Polirubro
                     }
                     else
                     {
+<<<<<<< HEAD
                         ArticuloModelo Articulo = new ArticuloModelo();
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                         Articulo.Id = 1;
                         Articulo.Descripcion = ArticuloAgregar.txtDescripcion.Text;
                         Articulo.PrecioCosto = Convert.ToDouble(ArticuloAgregar.txtPrecioCosto.Text);
@@ -91,6 +115,7 @@ namespace Polirubro
                     }
                     break;
                 case 2://Edicion
+<<<<<<< HEAD
                         var Articulo = ObtenerArticulo(descripcion);
                         Articulo.Descripcion = ArticuloEditar.txtDescripcion.Text;
                         Articulo.PrecioCosto = Convert.ToDouble(ArticuloEditar.txtPrecioCosto.Text);
@@ -102,6 +127,24 @@ namespace Polirubro
                     break;
                 case 3://Baja
 
+=======
+                        var _Articulo = ObtenerArticulo(Id);
+                        _Articulo.Descripcion = ArticuloEditar.txtDescripcion.Text;
+                        _Articulo.PrecioCosto = Convert.ToDouble(ArticuloEditar.txtPrecioCosto.Text);
+                        _Articulo.PrecioVenta = Convert.ToDouble(ArticuloEditar.txtPrecioVenta.Text);
+                        _Articulo.Cantidad = Convert.ToInt32(ArticuloEditar.txtCantidad.Text);
+                        _Articulo.Ganancia = Convert.ToDouble(ArticuloEditar.txtGanancia.Text);
+                        Guardar();
+                        MessageBox.Show("Articulo Editado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Grilla.DataSource = ListadoInicial();
+                    break;
+                case 3://Baja
+                        var _Arti = ObtenerArticulo(Id);
+                        this.ListaArticulos.Remove(_Arti);
+                        Guardar();
+                        MessageBox.Show("Articulo Eliminado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Grilla.DataSource = ListadoInicial();
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
                     break;
             }
         }

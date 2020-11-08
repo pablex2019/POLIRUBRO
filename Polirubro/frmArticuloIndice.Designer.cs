@@ -32,8 +32,13 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+=======
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnDescargar = new System.Windows.Forms.Button();
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +80,7 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+<<<<<<< HEAD
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(177, 186);
@@ -92,14 +98,40 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Descargar";
             this.button4.UseVisualStyleBackColor = true;
+=======
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(177, 186);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnDescargar
+            // 
+            this.btnDescargar.Location = new System.Drawing.Point(258, 186);
+            this.btnDescargar.Name = "btnDescargar";
+            this.btnDescargar.Size = new System.Drawing.Size(75, 23);
+            this.btnDescargar.TabIndex = 5;
+            this.btnDescargar.Text = "Descargar";
+            this.btnDescargar.UseVisualStyleBackColor = true;
+            this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             // 
             // frmArticuloIndice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 221);
+<<<<<<< HEAD
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
+=======
+            this.Controls.Add(this.btnDescargar);
+            this.Controls.Add(this.btnEliminar);
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dataGridView1);
@@ -118,8 +150,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+=======
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnDescargar;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
