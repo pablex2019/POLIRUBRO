@@ -1,5 +1,4 @@
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Polirubro.exe.config
-C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.csprojResolveAssemblyReference.cache
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmIniciarSesion.resources
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.Properties.Resources.resources
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.csproj.GenerateResource.Cache
@@ -12,3 +11,8 @@ C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Poliru
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmArticuloAgregar.resources
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmArticuloIndice.resources
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmPanel.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.frmArticuloEditar.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\itextsharp.dll
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\itextsharp.xml
+C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.csprojResolveAssemblyReference.cache
