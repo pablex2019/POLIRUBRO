@@ -38,10 +38,10 @@ namespace Polirubro
             Leer();
             return this.ListaArticulos.ToList();
         }
-        public ArticuloModelo ObtenerArticulo(string Descripcion)
+        public ArticuloModelo ObtenerArticulo(int id)
         {
             Leer();
-            return this.ListaArticulos.Where(x => x.Descripcion == Descripcion).FirstOrDefault();
+            return this.ListaArticulos.Where(x => x.Id == id).FirstOrDefault();
         }
         public bool Existe(frmArticuloAgregar ArticuloAgregar)
         {
@@ -51,17 +51,17 @@ namespace Polirubro
         {
             return ListaArticulos.Max(x => x.Id) + 1;
         }
-        public void ABM(int Operacion,frmArticuloAgregar ArticuloAgregar,frmArticuloEditar ArticuloEditar,string descripcion,DataGridView Grilla)
+        public void ABM(int Operacion,frmArticuloAgregar ArticuloAgregar,frmArticuloEditar ArticuloEditar,int Id,DataGridView Grilla)
         {
             Leer();
-            switch(Operacion)
+            switch (Operacion)
             {
                 case 1://Alta
-                    if(ListaArticulos.Count>0)
+                    ArticuloModelo Articulo = new ArticuloModelo();
+                    if (ListaArticulos.Count>0)
                     {
                         if(Existe(ArticuloAgregar)!=true)
                         {
-                            ArticuloModelo Articulo = new ArticuloModelo();
                             Articulo.Id = ObtenerUltimoID();
                             Articulo.Descripcion = ArticuloAgregar.txtDescripcion.Text;
                             Articulo.PrecioCosto = Convert.ToDouble(ArticuloAgregar.txtPrecioCosto.Text);
@@ -76,7 +76,6 @@ namespace Polirubro
                     }
                     else
                     {
-                        ArticuloModelo Articulo = new ArticuloModelo();
                         Articulo.Id = 1;
                         Articulo.Descripcion = ArticuloAgregar.txtDescripcion.Text;
                         Articulo.PrecioCosto = Convert.ToDouble(ArticuloAgregar.txtPrecioCosto.Text);
@@ -91,17 +90,22 @@ namespace Polirubro
                     }
                     break;
                 case 2://Edicion
-                        var Articulo = ObtenerArticulo(descripcion);
-                        Articulo.Descripcion = ArticuloEditar.txtDescripcion.Text;
-                        Articulo.PrecioCosto = Convert.ToDouble(ArticuloEditar.txtPrecioCosto.Text);
-                        Articulo.PrecioVenta = Convert.ToDouble(ArticuloEditar.txtPrecioVenta.Text);
-                        Articulo.Cantidad = Convert.ToInt32(ArticuloEditar.txtCantidad.Text);
-                        Articulo.Ganancia = Convert.ToDouble(ArticuloEditar.txtGanancia.Text);
+                        var _Articulo = ObtenerArticulo(Id);
+                        _Articulo.Descripcion = ArticuloEditar.txtDescripcion.Text;
+                        _Articulo.PrecioCosto = Convert.ToDouble(ArticuloEditar.txtPrecioCosto.Text);
+                        _Articulo.PrecioVenta = Convert.ToDouble(ArticuloEditar.txtPrecioVenta.Text);
+                        _Articulo.Cantidad = Convert.ToInt32(ArticuloEditar.txtCantidad.Text);
+                        _Articulo.Ganancia = Convert.ToDouble(ArticuloEditar.txtGanancia.Text);
                         Guardar();
                         MessageBox.Show("Articulo Editado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Grilla.DataSource = ListadoInicial();
                     break;
                 case 3://Baja
-
+                        var _Arti = ObtenerArticulo(Id);
+                        this.ListaArticulos.Remove(_Arti);
+                        Guardar();
+                        MessageBox.Show("Articulo Eliminado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Grilla.DataSource = ListadoInicial();
                     break;
             }
         }
