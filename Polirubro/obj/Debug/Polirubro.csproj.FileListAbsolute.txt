@@ -16,3 +16,4 @@ C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Bouncy
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\itextsharp.dll
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\itextsharp.xml
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Polirubro.csprojResolveAssemblyReference.cache
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmVenta.resources
