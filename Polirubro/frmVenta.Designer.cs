@@ -38,18 +38,6 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtVenta = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtCosto = new System.Windows.Forms.TextBox();
-            this.txtGanancia = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtPrecioCosto = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +45,18 @@
             this.precioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subtotalVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtVenta = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnHistorial = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCosto = new System.Windows.Forms.TextBox();
+            this.txtGanancia = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtPrecioCosto = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -92,6 +92,7 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Location = new System.Drawing.Point(82, 41);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(478, 20);
@@ -109,6 +110,7 @@
             // 
             // txtPrecioVenta
             // 
+            this.txtPrecioVenta.Enabled = false;
             this.txtPrecioVenta.Location = new System.Drawing.Point(223, 74);
             this.txtPrecioVenta.Name = "txtPrecioVenta";
             this.txtPrecioVenta.Size = new System.Drawing.Size(66, 20);
@@ -158,6 +160,41 @@
             this.dataGridView1.Size = new System.Drawing.Size(544, 97);
             this.dataGridView1.TabIndex = 9;
             // 
+            // id
+            // 
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "DESCRIPCION";
+            this.descripcion.Name = "descripcion";
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "CANTIDAD";
+            this.cantidad.Name = "cantidad";
+            // 
+            // precioCosto
+            // 
+            this.precioCosto.HeaderText = "PRECIO COSTO";
+            this.precioCosto.Name = "precioCosto";
+            // 
+            // precioVenta
+            // 
+            this.precioVenta.HeaderText = "PRECIO VENTA";
+            this.precioVenta.Name = "precioVenta";
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "SUB TOTAL COSTO";
+            this.subtotal.Name = "subtotal";
+            // 
+            // subtotalVenta
+            // 
+            this.subtotalVenta.HeaderText = "SUB TOTAL VENTA";
+            this.subtotalVenta.Name = "subtotalVenta";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -205,14 +242,15 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button4
+            // btnHistorial
             // 
-            this.button4.Location = new System.Drawing.Point(157, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Historial";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHistorial.Location = new System.Drawing.Point(157, 8);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(118, 23);
+            this.btnHistorial.TabIndex = 15;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // label7
             // 
@@ -250,6 +288,7 @@
             // 
             // txtPrecioCosto
             // 
+            this.txtPrecioCosto.Enabled = false;
             this.txtPrecioCosto.Location = new System.Drawing.Point(82, 74);
             this.txtPrecioCosto.Name = "txtPrecioCosto";
             this.txtPrecioCosto.Size = new System.Drawing.Size(66, 20);
@@ -264,41 +303,6 @@
             this.label9.Size = new System.Drawing.Size(67, 13);
             this.label9.TabIndex = 20;
             this.label9.Text = "Precio Costo";
-            // 
-            // id
-            // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "DESCRIPCION";
-            this.descripcion.Name = "descripcion";
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "CANTIDAD";
-            this.cantidad.Name = "cantidad";
-            // 
-            // precioCosto
-            // 
-            this.precioCosto.HeaderText = "PRECIO COSTO";
-            this.precioCosto.Name = "precioCosto";
-            // 
-            // precioVenta
-            // 
-            this.precioVenta.HeaderText = "PRECIO VENTA";
-            this.precioVenta.Name = "precioVenta";
-            // 
-            // subtotal
-            // 
-            this.subtotal.HeaderText = "SUB TOTAL COSTO";
-            this.subtotal.Name = "subtotal";
-            // 
-            // subtotalVenta
-            // 
-            this.subtotalVenta.HeaderText = "SUB TOTAL VENTA";
-            this.subtotalVenta.Name = "subtotalVenta";
             // 
             // txtFecha
             // 
@@ -332,7 +336,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCosto);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnGuardar);
@@ -375,7 +379,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.TextBox txtGanancia;

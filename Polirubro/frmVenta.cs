@@ -13,12 +13,15 @@ namespace Polirubro
     public partial class frmVenta : Form
     {
         private ArticuloControler Articulo;
+        private VentaControler Venta;
+
         private string dato;
 
         public frmVenta()
         {
             InitializeComponent();
             Articulo = new ArticuloControler("Articulo");
+            Venta = new VentaControler("Venta");
         }
         private void frmVenta_Load(object sender, EventArgs e)
         {
@@ -48,7 +51,6 @@ namespace Polirubro
         {
             double venta = 0.0;
             double costo = 0.0;
-            double ganancia = 0.0;
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = txtCodigo.Text;
             dataGridView1.Rows[n].Cells[1].Value = txtDescripcion.Text;
@@ -79,15 +81,19 @@ namespace Polirubro
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             double subtotal = 0.0;
+            double costo = 0.0;
             foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
             {
                 dataGridView1.Rows.RemoveAt(item.Index);
             }
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
-                subtotal += Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value);
+                costo += Convert.ToInt32(dataGridView1.Rows[i].Cells[5].Value);
+                subtotal += Convert.ToInt32(dataGridView1.Rows[i].Cells[6].Value);
             }
             txtVenta.Text = subtotal.ToString();
+            txtCosto.Text = costo.ToString();
+            txtGanancia.Text = Convert.ToString(subtotal - costo);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -97,8 +103,12 @@ namespace Polirubro
             venta.Importe = Convert.ToDouble(txtVenta.Text);
             venta.Costo = Convert.ToDouble(txtCosto.Text);
             venta.Ganancia = Convert.ToDouble(txtGanancia.Text);
+            Venta.ABM(venta);
         }
 
-        
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            new frmHistorial().Show();
+        }
     } 
 }
