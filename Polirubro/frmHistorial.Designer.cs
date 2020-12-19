@@ -44,7 +44,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -52,6 +51,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnDescargar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,16 +204,6 @@
             this.textBox1.Size = new System.Drawing.Size(79, 20);
             this.textBox1.TabIndex = 27;
             // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Location = new System.Drawing.Point(212, 188);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(55, 23);
-            this.btnCalcular.TabIndex = 28;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -274,12 +265,33 @@
             this.label12.TabIndex = 34;
             this.label12.Text = "Pablo";
             // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(212, 188);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(55, 23);
+            this.btnCalcular.TabIndex = 28;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // btnDescargar
+            // 
+            this.btnDescargar.Location = new System.Drawing.Point(12, 271);
+            this.btnDescargar.Name = "btnDescargar";
+            this.btnDescargar.Size = new System.Drawing.Size(69, 23);
+            this.btnDescargar.TabIndex = 36;
+            this.btnDescargar.Text = "Descargar";
+            this.btnDescargar.UseVisualStyleBackColor = true;
+            this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
+            // 
             // frmHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(1)))), ((int)(((byte)(1)))));
             this.ClientSize = new System.Drawing.Size(517, 297);
+            this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox3);
@@ -330,7 +342,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox2;
@@ -338,5 +349,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnDescargar;
     }
 }

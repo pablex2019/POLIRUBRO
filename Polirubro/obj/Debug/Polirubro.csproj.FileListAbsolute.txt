@@ -17,3 +17,4 @@ C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Poliru
 C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csproj.GenerateResource.Cache
 C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.exe
 C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.pdb
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csprojResolveAssemblyReference.cache

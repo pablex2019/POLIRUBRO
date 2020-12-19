@@ -67,7 +67,7 @@ namespace Polirubro
                 string descripcion = dataGridView1.Rows[i].Cells[1].Value.ToString();
                 double precioCosto = Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value);
                 double precioVenta = Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
-                int cantidad = Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value);
+                double cantidad = Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value);
                 double subtotalCosto = Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value);
                 double subtotalVenta = Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value);
                 venta += subtotalVenta;
