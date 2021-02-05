@@ -90,7 +90,7 @@ namespace Polirubro
                 }
             }
             //Exportar el PDF
-            string ruta = @"C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Reportes\";
+            string ruta = @"C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Reportes\";
             if(!Directory.Exists(ruta))
             {
                 Directory.CreateDirectory(ruta);
