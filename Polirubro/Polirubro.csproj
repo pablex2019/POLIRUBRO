@@ -97,6 +97,12 @@
     <Compile Include="frmPanel.Designer.cs">
       <DependentUpon>frmPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPromocionIndice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromocionIndice.Designer.cs">
+      <DependentUpon>frmPromocionIndice.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPanel.resx">
       <DependentUpon>frmPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromocionIndice.resx">
+      <DependentUpon>frmPromocionIndice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>

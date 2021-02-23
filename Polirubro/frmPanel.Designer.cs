@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuArticulo = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuVenta = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPromocion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,7 +39,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuArticulo,
-            this.mnuVenta});
+            this.mnuVenta,
+            this.mnuPromocion});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(927, 24);
@@ -58,6 +60,13 @@
             this.mnuVenta.Size = new System.Drawing.Size(48, 20);
             this.mnuVenta.Text = "Venta";
             this.mnuVenta.Click += new System.EventHandler(this.mnuVenta_Click);
+            // 
+            // mnuPromocion
+            // 
+            this.mnuPromocion.Name = "mnuPromocion";
+            this.mnuPromocion.Size = new System.Drawing.Size(78, 20);
+            this.mnuPromocion.Text = "Promoción";
+            this.mnuPromocion.Click += new System.EventHandler(this.mnuPromocion_Click);
             // 
             // frmPanel
             // 
@@ -83,5 +92,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuArticulo;
         private System.Windows.Forms.ToolStripMenuItem mnuVenta;
+        private System.Windows.Forms.ToolStripMenuItem mnuPromocion;
     }
 }
