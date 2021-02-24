@@ -44,6 +44,7 @@
             this.dgvPromocion.Name = "dgvPromocion";
             this.dgvPromocion.Size = new System.Drawing.Size(436, 154);
             this.dgvPromocion.TabIndex = 3;
+            this.dgvPromocion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPromocion_CellClick);
             // 
             // label1
             // 

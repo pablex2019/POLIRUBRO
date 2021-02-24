@@ -40,3 +40,5 @@ C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Poli
 C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csproj.CopyComplete
 C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.exe
 C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.pdb
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPromocionIndice.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPromocionesAgregar.resources
