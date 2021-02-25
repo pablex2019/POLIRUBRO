@@ -111,6 +111,7 @@
             this.Name = "frmPromocionIndice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Promocion - Indice";
+            this.Load += new System.EventHandler(this.frmPromocionIndice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPromocion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
