@@ -51,7 +51,7 @@ namespace Polirubro
             Leer();
             return this.ListaPromociones.ToList();
         }
-        public void ABM(int Operacion, frmPromocionesAgregar PromocionesAgregar, frmArticuloEditar ArticuloEditar, int Id, DataGridView Grilla)
+        public void ABM(int Operacion, frmPromocionesAgregar PromocionesAgregar, frmPromocionEditar PromocionesEditar, int Id, DataGridView Grilla)
         {
             Leer();
             switch (Operacion)
@@ -85,7 +85,8 @@ namespace Polirubro
                     break;
                 case 2://Edicion
                     var _Promocion = ObtenerPromocion(Id);
-                    
+                    _Promocion.Articulo = PromocionesEditar.cboArticulos.Text;
+                    _Promocion.Descripcion = PromocionesEditar.rtbDescripcion.Text;
                     Guardar();
                     MessageBox.Show("Promocion Editada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Grilla.DataSource = ListadoInicial();

@@ -40,7 +40,10 @@ namespace Polirubro
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            
+            frmPromocionEditar editar = new frmPromocionEditar();
+            editar.Id = Convert.ToInt32(id);
+            editar.Grilla = dgvPromocion;
+            editar.Show();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

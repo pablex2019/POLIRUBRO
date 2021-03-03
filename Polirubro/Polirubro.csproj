@@ -97,6 +97,12 @@
     <Compile Include="frmPanel.Designer.cs">
       <DependentUpon>frmPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPromocionEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromocionEditar.Designer.cs">
+      <DependentUpon>frmPromocionEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPromocionesAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPanel.resx">
       <DependentUpon>frmPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromocionEditar.resx">
+      <DependentUpon>frmPromocionEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPromocionesAgregar.resx">
       <DependentUpon>frmPromocionesAgregar.cs</DependentUpon>
