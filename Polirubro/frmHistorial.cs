@@ -25,15 +25,36 @@ namespace Polirubro
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double gananciaTotal = Convert.ToDouble(txtGananciaTotal.Text);
-            double porcentaje = Convert.ToDouble(textBox1.Text);
-            double montoAdrian = gananciaTotal * porcentaje / 100;
-            double montoPabloWalter = ((gananciaTotal-montoAdrian)/2);
-            textBox2.Text = Convert.ToString(montoAdrian);
-            textBox3.Text = Convert.ToString(montoPabloWalter);
-            textBox4.Text = Convert.ToString(montoPabloWalter);
+            if(!string.IsNullOrEmpty(txtGastoNoPrevisto.Text))
+            {
+                double gananciaTotal = Convert.ToDouble(txtGananciaReal.Text);
+                double porcentaje = Convert.ToDouble(textBox1.Text);
+                double montoAdrian = gananciaTotal * porcentaje / 100;
+                double montoPabloWalter = ((montoAdrian) / 2);
+                textBox2.Text = Convert.ToString(montoAdrian);
+                textBox3.Text = Convert.ToString(montoPabloWalter);
+                textBox4.Text = Convert.ToString(montoPabloWalter);
+            }
+            else
+            {
+                double gananciaTotal = Convert.ToDouble(txtGananciaTotal.Text);
+                double porcentaje = Convert.ToDouble(textBox1.Text);
+                double montoAdrian = gananciaTotal * porcentaje / 100;
+                double montoPabloWalter = ((montoAdrian) / 2);
+                textBox2.Text = Convert.ToString(montoAdrian);
+                textBox3.Text = Convert.ToString(montoPabloWalter);
+                textBox4.Text = Convert.ToString(montoPabloWalter);
+            }
         }
+        private void btnAplicarCompra_Click(object sender, EventArgs e)
+        {
 
+            txtDineroDisponible.Text = Convert.ToString(Convert.ToInt32(txtGananciaReal.Text) - Convert.ToInt32(txtCompraRealizada.Text));
+        }
+        private void btnAplicar_Click(object sender, EventArgs e)
+        {
+            txtGananciaReal.Text = Convert.ToString(Convert.ToInt32(txtGananciaTotal.Text) - Convert.ToInt32(txtGastoNoPrevisto.Text) + 778);
+        }
         private void btnDescargar_Click(object sender, EventArgs e)
         {
             //Esblecer el tipo de hoja
@@ -75,18 +96,24 @@ namespace Polirubro
                 doc.Add(new Paragraph(Chunk.NEWLINE));
                 doc.Add(new Paragraph("Venta Total: "+txtVentaTotal.Text));
                 doc.Add(new Paragraph("Costo Total: " + txtCostoTotal.Text));
-                doc.Add(new Paragraph("Ganancia Total: " + txtGananciaTotal.Text));
+                doc.Add(new Paragraph("Ganancia Estimada: " + txtGananciaTotal.Text));
                 doc.Add(new Paragraph(Chunk.NEWLINE));
-                doc.Add(new Paragraph("Ganancias"));
+                doc.Add(new Paragraph("Gasto No previsto: " + txtGastoNoPrevisto.Text));
+                doc.Add(new Paragraph(Chunk.NEWLINE));
+                doc.Add(new Paragraph("Ganancias Real: " + txtGananciaReal.Text));
                 doc.Add(new Paragraph(Chunk.NEWLINE));
                 doc.Add(new Paragraph("Adrian: "+textBox2.Text));
                 doc.Add(new Paragraph("Walter: "+textBox3.Text));
                 doc.Add(new Paragraph("Pablo: "+textBox4.Text));
+                doc.Add(new Paragraph(Chunk.NEWLINE));
+                doc.Add(new Paragraph("Compra Realizada: " + txtCompraRealizada.Text));
+                doc.Add(new Paragraph(Chunk.NEWLINE));
+                doc.Add(new Paragraph("Dinero Disponible: " + txtDineroDisponible.Text));
+                doc.Add(new Paragraph(Chunk.NEWLINE));
                 doc.Close();
                 stream.Close();
             }
         }
-
         private void frmHistorial_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Venta.ListadoInicial();

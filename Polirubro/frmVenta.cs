@@ -31,7 +31,7 @@ namespace Polirubro
             string hora = DateTime.Now.Hour.ToString();
             string minuto = DateTime.Now.Minute.ToString();
             string segundo = DateTime.Now.Second.ToString();
-            dato = mes + "/" + dia + "/" + anio + " " + hora + ":" + minuto + ":" + segundo;
+            dato = dia + "/" + mes + "/" + anio + " " + hora + ":" + minuto + ":" + segundo;
             txtFecha.Text = dato;
         }
         private void txtCodigo_TextChanged(object sender, EventArgs e)

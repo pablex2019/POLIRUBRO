@@ -54,6 +54,10 @@ namespace Polirubro
                 Editar.Grilla = dataGridView1;
                 Editar.Show();
             }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -61,6 +65,10 @@ namespace Polirubro
             if (Id != 0)
             {
                 articulo.ABM(3, null, null, Id, dataGridView1);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

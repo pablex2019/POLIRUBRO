@@ -40,15 +40,29 @@ namespace Polirubro
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            frmPromocionEditar editar = new frmPromocionEditar();
-            editar.Id = Convert.ToInt32(id);
-            editar.Grilla = dgvPromocion;
-            editar.Show();
+            if(id!=string.Empty)
+            {
+                frmPromocionEditar editar = new frmPromocionEditar();
+                editar.Id = Convert.ToInt32(id);
+                editar.Grilla = dgvPromocion;
+                editar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (id != string.Empty)
+            {
+                Promociones.ABM(3, null, null, Convert.ToInt32(id), dgvPromocion);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnDescargar_Click(object sender, EventArgs e)
@@ -58,7 +72,7 @@ namespace Polirubro
             //Asignamos el contenido del datagridview a una tabla
             PdfPTable pdfTable = new PdfPTable(dgvPromocion.ColumnCount);
             pdfTable.TotalWidth = 100f;
-            float[] anchos = new float[] { 10f, 40f, 50f};
+            float[] anchos = new float[] { 10f, 60f, 30f};
             pdfTable.SetWidths(anchos);
             pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
             //Recorremos el datagridview para agregar el nombre de las columnas

@@ -53,6 +53,16 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnDescargar = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtGastoNoPrevisto = new System.Windows.Forms.TextBox();
+            this.btnAplicar = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtGananciaReal = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtCompraRealizada = new System.Windows.Forms.TextBox();
+            this.btnAplicarCompra = new System.Windows.Forms.Button();
+            this.txtDineroDisponible = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,7 +218,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(12, 223);
+            this.label9.Location = new System.Drawing.Point(12, 271);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 13);
             this.label9.TabIndex = 29;
@@ -218,7 +228,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(12, 249);
+            this.label10.Location = new System.Drawing.Point(12, 297);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(37, 13);
             this.label10.TabIndex = 30;
@@ -226,14 +236,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(55, 245);
+            this.textBox2.Location = new System.Drawing.Point(55, 293);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(49, 20);
             this.textBox2.TabIndex = 31;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 244);
+            this.textBox3.Location = new System.Drawing.Point(154, 292);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(52, 20);
             this.textBox3.TabIndex = 33;
@@ -242,7 +252,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(110, 249);
+            this.label11.Location = new System.Drawing.Point(110, 297);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(38, 13);
             this.label11.TabIndex = 32;
@@ -250,7 +260,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(252, 244);
+            this.textBox4.Location = new System.Drawing.Point(252, 292);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(52, 20);
             this.textBox4.TabIndex = 35;
@@ -259,7 +269,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(212, 249);
+            this.label12.Location = new System.Drawing.Point(212, 297);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(34, 13);
             this.label12.TabIndex = 34;
@@ -277,7 +287,7 @@
             // 
             // btnDescargar
             // 
-            this.btnDescargar.Location = new System.Drawing.Point(12, 271);
+            this.btnDescargar.Location = new System.Drawing.Point(15, 317);
             this.btnDescargar.Name = "btnDescargar";
             this.btnDescargar.Size = new System.Drawing.Size(69, 23);
             this.btnDescargar.TabIndex = 36;
@@ -285,12 +295,110 @@
             this.btnDescargar.UseVisualStyleBackColor = true;
             this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label13.Location = new System.Drawing.Point(12, 223);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 13);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Gasto no previsto";
+            // 
+            // txtGastoNoPrevisto
+            // 
+            this.txtGastoNoPrevisto.Location = new System.Drawing.Point(127, 223);
+            this.txtGastoNoPrevisto.Name = "txtGastoNoPrevisto";
+            this.txtGastoNoPrevisto.Size = new System.Drawing.Size(79, 20);
+            this.txtGastoNoPrevisto.TabIndex = 38;
+            // 
+            // btnAplicar
+            // 
+            this.btnAplicar.Location = new System.Drawing.Point(212, 220);
+            this.btnAplicar.Name = "btnAplicar";
+            this.btnAplicar.Size = new System.Drawing.Size(55, 23);
+            this.btnAplicar.TabIndex = 39;
+            this.btnAplicar.Text = "Aplicar";
+            this.btnAplicar.UseVisualStyleBackColor = true;
+            this.btnAplicar.Click += new System.EventHandler(this.btnAplicar_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label14.Location = new System.Drawing.Point(332, 271);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 13);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Ganancia Real";
+            // 
+            // txtGananciaReal
+            // 
+            this.txtGananciaReal.Location = new System.Drawing.Point(426, 271);
+            this.txtGananciaReal.Name = "txtGananciaReal";
+            this.txtGananciaReal.Size = new System.Drawing.Size(79, 20);
+            this.txtGananciaReal.TabIndex = 41;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label15.Location = new System.Drawing.Point(12, 249);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(93, 13);
+            this.label15.TabIndex = 42;
+            this.label15.Text = "Compra Realizada";
+            // 
+            // txtCompraRealizada
+            // 
+            this.txtCompraRealizada.Location = new System.Drawing.Point(127, 249);
+            this.txtCompraRealizada.Name = "txtCompraRealizada";
+            this.txtCompraRealizada.Size = new System.Drawing.Size(79, 20);
+            this.txtCompraRealizada.TabIndex = 43;
+            // 
+            // btnAplicarCompra
+            // 
+            this.btnAplicarCompra.Location = new System.Drawing.Point(212, 249);
+            this.btnAplicarCompra.Name = "btnAplicarCompra";
+            this.btnAplicarCompra.Size = new System.Drawing.Size(55, 23);
+            this.btnAplicarCompra.TabIndex = 44;
+            this.btnAplicarCompra.Text = "Aplicar";
+            this.btnAplicarCompra.UseVisualStyleBackColor = true;
+            this.btnAplicarCompra.Click += new System.EventHandler(this.btnAplicarCompra_Click);
+            // 
+            // txtDineroDisponible
+            // 
+            this.txtDineroDisponible.Location = new System.Drawing.Point(426, 299);
+            this.txtDineroDisponible.Name = "txtDineroDisponible";
+            this.txtDineroDisponible.Size = new System.Drawing.Size(79, 20);
+            this.txtDineroDisponible.TabIndex = 46;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label16.Location = new System.Drawing.Point(332, 299);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(90, 13);
+            this.label16.TabIndex = 45;
+            this.label16.Text = "Dinero Disponible";
+            // 
             // frmHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(1)))), ((int)(((byte)(1)))));
-            this.ClientSize = new System.Drawing.Size(517, 297);
+            this.ClientSize = new System.Drawing.Size(517, 352);
+            this.Controls.Add(this.txtDineroDisponible);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.btnAplicarCompra);
+            this.Controls.Add(this.txtCompraRealizada);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtGananciaReal);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.btnAplicar);
+            this.Controls.Add(this.txtGastoNoPrevisto);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label12);
@@ -351,5 +459,15 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnDescargar;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtGastoNoPrevisto;
+        private System.Windows.Forms.Button btnAplicar;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtGananciaReal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtCompraRealizada;
+        private System.Windows.Forms.Button btnAplicarCompra;
+        private System.Windows.Forms.TextBox txtDineroDisponible;
+        private System.Windows.Forms.Label label16;
     }
 }

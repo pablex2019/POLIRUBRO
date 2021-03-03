@@ -16,19 +16,21 @@ namespace Polirubro
         public DataGridView Grilla;
         private MetodosGenericos MetodosGenericos;
         private PromocionesControler Promocion;
+        private ArticuloControler Articulo;
 
         public frmPromocionEditar()
         {
             InitializeComponent();
             Promocion = new PromocionesControler("Promocion");
             MetodosGenericos = new MetodosGenericos();
+            Articulo = new ArticuloControler("Articulo");
         }
 
         private void frmPromocionEditar_Load(object sender, EventArgs e)
         {
             var _Promocion = Promocion.ObtenerPromocion(Id);
-            cboArticulos.DataSource = Promocion.ListadoInicial().Select(x=>x.Articulo).ToList();
-            cboArticulos.SelectedIndex = _Promocion.Id-1;
+            cboArticulos.DataSource = Articulo.ListadoInicial().Select(x=>x.Descripcion).ToList();
+            cboArticulos.SelectedIndex = _Promocion.Id;
             rtbDescripcion.Text = _Promocion.Descripcion;
         }
 
