@@ -10,29 +10,27 @@ using System.Windows.Forms;
 
 namespace Polirubro
 {
-    public partial class frmArticuloAgregar : Form
+    public partial class frmPromocionesAgregar : Form
     {
         public DataGridView Grilla;
-        private ArticuloControler Articulo;
+        private ArticuloControler articulo;
+        private PromocionesControler promocion;
         private MetodosGenericos MetodosGenericos;
 
-        public frmArticuloAgregar()
+        public frmPromocionesAgregar()
         {
             InitializeComponent();
-            Articulo = new ArticuloControler("Articulo");
+            articulo = new ArticuloControler("Articulo");
+            promocion = new PromocionesControler("Promocion");
             MetodosGenericos = new MetodosGenericos();
+        }
+        private void frmPromocionesAgregar_Load(object sender, EventArgs e)
+        {
+            cboArticulos.DataSource = articulo.ListadoInicial().Select(x=>x.Descripcion).ToList();
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            Articulo.ABM(1,this,null, Grilla);
-=======
-            Articulo.ABM(1,this,null,0, Grilla);
->>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
-=======
-            Articulo.ABM(1,this,null,0, Grilla);
->>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+            promocion.ABM(1,this,null,0,Grilla);
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {

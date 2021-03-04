@@ -1,12 +1,29 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+﻿using System;
+=======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Org.BouncyCastle.Utilities.IO;
 using System;
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 using System.IO;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
+using System.IO;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +33,15 @@ namespace Polirubro
 {
     public partial class frmArticuloIndice : Form
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        private string descripcion;
+=======
         private int Id;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
+        private int Id;
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
         private ArticuloControler articulo;
 
         public frmArticuloIndice()
@@ -41,18 +66,42 @@ namespace Polirubro
         {
             if(!string.IsNullOrEmpty(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()))
             {
+<<<<<<< HEAD
+<<<<<<< HEAD
+                descripcion = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+=======
                 Id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
+                Id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            if(!string.IsNullOrEmpty(descripcion))
+            {
+                frmArticuloEditar Editar = new frmArticuloEditar();
+                Editar.descripcion = descripcion;
+                Editar.Show();
+            }
+        }
+=======
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
             if(Id!=0)
             {
                 frmArticuloEditar Editar = new frmArticuloEditar();
                 Editar.Id = Id;
                 Editar.Grilla = dataGridView1;
                 Editar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -61,6 +110,10 @@ namespace Polirubro
             if (Id != 0)
             {
                 articulo.ABM(3, null, null, Id, dataGridView1);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -90,7 +143,7 @@ namespace Polirubro
                 }
             }
             //Exportar el PDF
-            string ruta = @"C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Reportes\";
+            string ruta = @"C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Reportes\";
             if(!Directory.Exists(ruta))
             {
                 Directory.CreateDirectory(ruta);
@@ -106,5 +159,9 @@ namespace Polirubro
                 stream.Close();
             }
         }
+<<<<<<< HEAD
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
+>>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
     }
 }
