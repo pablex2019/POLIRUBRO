@@ -99,6 +99,10 @@ namespace Polirubro
                 Editar.Grilla = dataGridView1;
                 Editar.Show();
             }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -106,6 +110,10 @@ namespace Polirubro
             if (Id != 0)
             {
                 articulo.ABM(3, null, null, Id, dataGridView1);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -135,7 +143,7 @@ namespace Polirubro
                 }
             }
             //Exportar el PDF
-            string ruta = @"C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Reportes\";
+            string ruta = @"C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Reportes\";
             if(!Directory.Exists(ruta))
             {
                 Directory.CreateDirectory(ruta);

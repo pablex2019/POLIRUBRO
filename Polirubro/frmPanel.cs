@@ -26,5 +26,10 @@ namespace Polirubro
         {
             new frmVenta().Show();
         }
+
+        private void mnuPromocion_Click(object sender, EventArgs e)
+        {
+            new frmPromocionIndice().Show();
+        }
     }
 }

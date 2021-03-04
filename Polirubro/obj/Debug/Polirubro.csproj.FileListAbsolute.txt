@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\bin\Debug\Polirubro.exe.config
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,3 +33,50 @@ C:\Users\pablo\Desktop\Documentos\Proyectos\Polirubro\Polirubro\obj\Debug\Poliru
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
 =======
 >>>>>>> 11e1ba6cab6cd76a6df98deed3ba91941d60cb8c
+=======
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\Polirubro.exe.config
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\Polirubro.exe
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\Polirubro.pdb
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\itextsharp.dll
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\itextsharp.xml
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmArticuloAgregar.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmArticuloEditar.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmArticuloIndice.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmHistorial.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmIniciarSesion.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPanel.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmVenta.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.Properties.Resources.resources
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csproj.GenerateResource.Cache
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.exe
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.pdb
+C:\Users\pablo\Desktop\Documentos\Proyectos\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csprojResolveAssemblyReference.cache
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\Polirubro.exe.config
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\Polirubro.exe
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\Polirubro.pdb
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\itextsharp.dll
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\itextsharp.xml
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csprojAssemblyReference.cache
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmArticuloAgregar.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmArticuloEditar.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmArticuloIndice.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmHistorial.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmIniciarSesion.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPanel.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmVenta.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.Properties.Resources.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csproj.GenerateResource.cache
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csproj.CoreCompileInputs.cache
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.csproj.CopyComplete
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.exe
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.pdb
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPromocionIndice.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPromocionesAgregar.resources
+C:\Users\practiaglobal\Desktop\Emprendimiento\POLIRUBRO\Polirubro\obj\Debug\Polirubro.frmPromocionEditar.resources
+>>>>>>> developer
